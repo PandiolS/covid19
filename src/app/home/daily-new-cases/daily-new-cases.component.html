@@ -1,0 +1,25 @@
+
+  <div class="card card-chart" style="height: 350px">
+    <div class="card-header">
+      <h5 class="card-title">Raste të reja në ditë</h5>       
+    </div>
+    <div class="card-body">
+      <app-spinner *ngIf="loading"></app-spinner>
+      <canvas baseChart 
+      [datasets]="chartData" 
+      [labels]="chartLabel" 
+      [chartType]="ChartType"
+      [options]="chartOptions"
+      [colors]="colors"
+      
+      >
+    </canvas>
+
+    </div>
+    <div class="card-footer">       
+      <hr />
+      <div class="card-stats">
+        <i class="fa fa-bookmark-o"></i> Raste të infektuara për cdo ditë
+      </div>
+    </div>
+  </div>

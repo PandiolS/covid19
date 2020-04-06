@@ -1,0 +1,41 @@
+.cblue{
+    color: #0a00d2 !important;
+}
+
+.cgreen{
+    color: #17da05 !important;
+}
+
+.cred{
+    color: #ff0909 !important;
+}
+
+.cyellow{
+    color: #ffae00 !important;
+}
+
+.caqua{
+    color: #f781e4 !important;
+}
+
+
+.bordercblue{
+    border-color: #0a00d2 !important;
+}
+
+.bordercgreen{
+    border-color: #17da05 !important;
+}
+
+.bordercred{
+    border-color: #ff0909 !important;
+}
+
+.bordercyellow{
+    border-color: #ffae00 !important;
+}
+
+.bordercaqua{
+    border-color: #f781e4 !important;
+}
+

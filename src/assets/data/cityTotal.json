@@ -1,0 +1,30 @@
+[
+    {
+    "City": "Tirana",
+    "Total": 5,
+    "Active": 5,
+    "Deaths": 5,
+    "Solved": 5  
+},
+{
+    "City": "Durrës",
+    "Total": 5,
+    "Active": 5,
+    "Deaths": 5,
+    "Solved": 5  
+},
+{
+    "City": "Shkodër",
+    "Total": 5,
+    "Active": 5,
+    "Deaths": 5,
+    "Solved": 5  
+},
+{
+    "City": "Korce",
+    "Total": 5,
+    "Active": 5,
+    "Deaths": 5,
+    "Solved": 5  
+}
+]

@@ -1,0 +1,23 @@
+
+  <div class="card card-chart" style="height: 350px">
+    <div class="card-header">
+      <h5 class="card-title">Vdekje në total</h5>       
+    </div>
+    <div class="card-body">
+      <app-spinner *ngIf="loading"></app-spinner>
+      <canvas baseChart 
+      [datasets]="chartData" 
+      [labels]="chartLabel" 
+      [chartType]="pieChartType"
+      [options]="pieChartOptions"
+      [legend]="pieChartLegend">
+    </canvas>
+
+    </div>
+    <div class="card-footer">       
+      <hr />
+      <div class="card-stats">
+        <i class="fa fa-bookmark-o"></i> Numri total i vdekjeve nga Covid-19
+      </div>
+    </div>
+  </div>

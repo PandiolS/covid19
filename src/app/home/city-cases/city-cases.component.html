@@ -1,0 +1,31 @@
+
+  <div class="card card-chart" style="height: 350px">
+    <div class="card-header">
+      <h5 class="card-title">Të infektuar sipas qyteteve</h5>       
+    </div>
+    <div class="card-body">
+      <app-spinner *ngIf="loading"></app-spinner>
+      <canvas baseChart 
+      [datasets]="chartData" 
+      [labels]="chartLabel" 
+      [chartType]="ChartType"
+      [options]="chartOptions"
+      [colors]="colors"
+      
+      >
+    </canvas>
+
+    </div>
+    <div class="card-footer">       
+      <hr />
+      <div class="card-stats">
+        <i class="fa fa-bookmark-o"></i> Numri i të infektuarve për cdo qytet
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  

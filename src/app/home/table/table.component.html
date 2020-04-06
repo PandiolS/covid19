@@ -1,0 +1,53 @@
+<div class="row">
+  <div class="col-md-12">
+    <div class="card">
+      <div class="card-header">
+        <h4 class="card-title"> Shpërndarja e rasteve totale në qytete</h4>
+      </div>
+      <div class="card-body">
+        <app-spinner *ngIf="loading"></app-spinner>
+        <div class="table-responsive">
+          <table class="table">
+            <thead class=" text-primary">
+              <th>
+                Qyteti
+              </th>
+              <th>
+                Raste total
+              </th>
+              <th>
+                Aktive
+              </th>
+              <th>
+                Shëruar
+              </th>
+              <th>
+                Vdekje
+              </th>
+            </thead>
+            <tbody>
+              <tr *ngFor="let row of dataResult">
+                <td>
+                  {{row.qarku}}
+                </td>
+                <td>
+                  {{row.raste_gjithsej}}
+                </td>
+                <td>
+                  {{row.akt_pozitive}}
+                </td> 
+                <td>
+                  {{row.sheruar}}
+                </td>  
+                <td>
+                  {{row.vdekur}}
+                </td>  
+
+              </tr>          
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

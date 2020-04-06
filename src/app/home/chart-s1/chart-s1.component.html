@@ -1,0 +1,23 @@
+<div class="card card-chart" style="min-height: 460px !important;">
+  <div class="card-header">
+    <h5 class="card-title">Shpërndarja e rasteve</h5>       
+  </div>
+  <div class="card-body">
+        <app-spinner *ngIf="loading"></app-spinner>
+        <canvas baseChart 
+        [data]="piechart1Data" 
+        [labels]="piechart1Label" 
+        [chartType]="pieChartType"
+        [options]="pieChartOptions"
+        [colors]="piechart1Color"
+        [legend]="pieChartLegend">
+      </canvas>        
+        
+      </div>
+      <div class="card-footer ">       
+        <hr>
+      </div>
+    </div>
+
+  
+

@@ -54,8 +54,9 @@ export class ChartS1Component implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.getData()
+    this.getData();
   }
+
 
   getData() {
     this.loading = true;

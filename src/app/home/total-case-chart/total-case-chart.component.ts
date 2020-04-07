@@ -54,10 +54,9 @@ export class TotalCaseChartComponent implements OnInit {
     private datePipe: DatePipe
     ) { }
 
-  ngOnInit() {
-    this.getData();
-  }
-
+    ngOnInit() {
+      this.getData();
+    }
 
   getData() {
     this.loading = true;

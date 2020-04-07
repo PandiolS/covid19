@@ -32,10 +32,4 @@ export class ServiceService {
     return this.http.get(url, { observe: 'response', responseType: 'text', headers: this.getHeaders() });
   }
 
-
-  public ggg(): Observable<any> {
-    const url = `https://coronavirus.al/api/stats.php`;
-    return this.http.get(url, { observe: 'response', responseType: 'text', headers: this.getHeaders() });
-  }
-
 }

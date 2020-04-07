@@ -57,7 +57,6 @@ export class DailyDeathChartComponent implements OnInit {
     this.getData();
   }
 
-
   getData() {
     this.loading = true;
     

@@ -54,11 +54,10 @@ export class CityCasesComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.getChartData();
+    this.getData();
   }
 
-
-  getChartData() {
+getData() {
     this.loading = true;
     
     this.local = JSON.parse(localStorage.getItem("qarqe"));

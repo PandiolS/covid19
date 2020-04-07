@@ -16,16 +16,17 @@ export class HeaderComponent implements OnInit {
 
   constructor(
     private service: ServiceService
-  ) { }
+  ) { 
+  }
 
   ngOnInit() {
     this.getData();
   }
 
+
   getData() {
     this.loading = true;
-
-    this.local = JSON.parse(localStorage.getItem("rootObject"));
+    this.local = JSON.parse(localStorage.getItem("rootObject"));   
     this.header = this.local.tabs;
     this.loading = false;
   //   this.service.getGeneralData().subscribe((result) => {

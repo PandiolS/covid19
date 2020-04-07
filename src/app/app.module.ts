@@ -8,6 +8,8 @@ import { HomeModule } from './home/home.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SharedModule } from './shared/shared.module';
+import { ServiceService } from './shared/service/service.service';
+import { Resolver } from './shared/resolver';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,7 @@ import { SharedModule } from './shared/shared.module';
     HomeModule,
     SharedModule
   ],
-  providers: [],
+  providers: [ServiceService, [Resolver]],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

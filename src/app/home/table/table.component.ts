@@ -21,6 +21,7 @@ export class TableComponent implements OnInit {
     this.getData();
   }
 
+
   getData() {
     this.loading = true;
 

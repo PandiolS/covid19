@@ -23,8 +23,7 @@ export class HomeComponent implements OnInit {
     
     this.service.getGeneralData().subscribe((data) => {
       if (JSON.parse(data.body)) {
-        this.data = JSON.parse(data.body);  
-        localStorage.clear();   
+        this.data = JSON.parse(data.body);   
         localStorage.setItem("rootObject", JSON.stringify(this.data.rootObject));
         localStorage.setItem("qarqe", JSON.stringify(this.data.qarqe));
         localStorage.setItem("deaths", JSON.stringify(this.data.deaths));

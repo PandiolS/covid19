@@ -1,0 +1,19 @@
+.black {
+    background-color: #131313 !important;
+}
+
+.white {
+    background-color: #f4f3ef !important;
+}
+
+.txtBlack {
+    color: #131313 !important;
+}
+
+.txtWhite {
+    color: #f4f3ef !important;
+}
+
+.fsize{
+    font-size: small;
+}

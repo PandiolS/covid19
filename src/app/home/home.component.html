@@ -1,24 +1,30 @@
 <div class="wrapper ">
-  <div class="main-panel">
+  <div class="main-panel" [ngClass]="{'white' : toggle, 'black': !toggle}">
     <nav class="navbar navbar-expand-lg navbar-absolute fixed-top navbar-transparent">
       <div class="container-fluid">
         <div class="navbar-wrapper">        
-          <a class="navbar-brand" [routerLink]="'/'">Covid-19 Statistics, ALBANIA</a>
+          <a class="navbar-brand" [ngClass]="{'txtBlack' : toggle, 'txtWhite': !toggle}" [routerLink]="'/'">Covid-19 Statistics, ALBANIA</a>
         </div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+        <div class="custom-control custom-switch navbar-toggler">
+          <input type="checkbox"  (click)="mode()" class="custom-control-input" id="darkSwitch">
+          <label [ngClass]="{'txtBlack' : toggle, 'txtWhite': !toggle}" class="custom-control-label fsize" for="darkSwitch">Mode</label>
+        </div>
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
           aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
           <i class="nc-icon nc-settings-gear-65"></i>
-        </button>
+        </button> -->
+        <!-- <div class="custom-control custom-switch navbar-toggler">
+          <input type="checkbox" class="custom-control-input" id="darkSwitch">
+          <label class="custom-control-label" for="darkSwitch">Mode</label>
+        </div> -->
         <div class="collapse navbar-collapse justify-content-end" id="navigation">
          
           <ul class="navbar-nav"> 
             <li class="nav-item">
-              <a class="nav-link btn-rotate" >
-                <i class="nc-icon nc-settings-gear-65"></i>
-                <p>
-                  <span class="d-lg-none d-md-block">Account</span>
-                </p>
-              </a>
+              <div class="custom-control custom-switch">
+                <input type="checkbox"  (click)="mode()" class="custom-control-input" id="darkSwitchm">
+                <label [ngClass]="{'txtBlack' : toggle, 'txtWhite': !toggle}" class="custom-control-label fsize" for="darkSwitch">Mode</label>
+              </div>         
             </li>
           </ul>
         </div>
@@ -81,11 +87,11 @@
         <div class="row">
           <nav class="footer-nav">
             <ul>
-              <li>Covid-19, Albania</li>              
+              <li [ngClass]="{'txtBlack' : toggle, 'txtWhite': !toggle}" >Covid-19, Albania</li>              
             </ul>
           </nav>
           <div class="credits ml-auto">
-            <span class="copyright">  © {{year}} v: 1.1.0, made with <i class="fa fa-heart heart"></i> by Albanians 
+            <span [ngClass]="{'txtBlack' : toggle, 'txtWhite': !toggle}" class="copyright">  © {{year}}, v1.1.0, made with <i class="fa fa-heart heart"></i> by Albanians 
             </span>
           </div>
         </div>

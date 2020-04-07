@@ -11,8 +11,10 @@ import { IData } from '../shared/interface/IData';
 export class HomeComponent implements OnInit {
 
   public year = new Date().getFullYear();
+  toggle = true;
+  status = 'Enable'; 
   data: any;
-  kll: any;
+  result: any;
 
   constructor(
     private service: ServiceService,
@@ -26,11 +28,11 @@ export class HomeComponent implements OnInit {
 
   public getSystemData() {
     this.data = this.route.snapshot.data.obj;
-    this.kll = JSON.parse(this.data.body);
+    this.result = JSON.parse(this.data.body);
 
-    localStorage.setItem("rootObject", JSON.stringify(this.kll.rootObject));
-        localStorage.setItem("qarqe", JSON.stringify(this.kll.qarqe));
-        localStorage.setItem("deaths", JSON.stringify(this.kll.deaths));
+    localStorage.setItem("rootObject", JSON.stringify(this.result.rootObject));
+        localStorage.setItem("qarqe", JSON.stringify(this.result.qarqe));
+        localStorage.setItem("deaths", JSON.stringify(this.result.deaths));
     
     // this.service.getGeneralData().subscribe((data) => {
     //   if (JSON.parse(data.body)) {
@@ -41,6 +43,11 @@ export class HomeComponent implements OnInit {
 
     //   }
     // });
+  }
+
+  mode(){
+    this.toggle = !this.toggle;
+    this.status = this.toggle ? 'Enable' : 'Disable';
   }
 
 }

@@ -39,8 +39,8 @@ export class ChartS1Component implements OnInit {
           return tooltipLabel + ': ' + tooltipData + ' (' + tooltipPercentage + '%)';
         }
       }
-
     }
+    
     };
     public pieChartType: ChartType = 'pie';
     public pieChartLegend = true;  

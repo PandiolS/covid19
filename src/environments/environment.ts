@@ -4,8 +4,8 @@
 
 export const environment = {
   production: false,
-   api: 'https://api.bedataweb.com'
-   //api: 'https://localhost:44387'
+   //api: 'https://api.bedataweb.com'
+   api: 'https://localhost:44387'
 };
 
 /*

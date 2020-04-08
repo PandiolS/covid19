@@ -1,6 +1,5 @@
 <div class="card card-chart" style="min-height: 460px !important;">
-    <div class="card-body">
-      <app-spinner *ngIf="loading"></app-spinner>
+    <div class="card-body">      
       <div class="row">
       
       <div class="col-lg-6 col-md-6 col-sm-6 col-md-offset-1">
@@ -15,7 +14,8 @@
               <div class="col-8 col-md-9">
                 <div class="numbers">
                   <p class="card-category">Raste gjithsej</p>
-                  <p class="card-title">{{header?.raste_gjithesej}}<p>
+                  <span class="card-title">{{header?.raste_gjithesej}} </span>
+                    <span style="font-size: 12px;" class="card-title"> (sot + {{newCases}} )</span>
                 </div>
               </div>
             </div>
@@ -98,7 +98,9 @@
           <div class="col-8 col-md-9">
             <div class="numbers">
               <p class="card-category">Shëruar</p>
-              <p class="card-title">{{header?.te_sheruar}}<p>
+              <!-- <p class="card-title">{{header?.te_sheruar}}<p> -->
+                <span class="card-title">{{header?.te_sheruar}} </span>
+                    <span style="font-size: 12px;" class="card-title"> (sot + {{newSolved}} )</span>
             </div>
           </div>
         </div>
@@ -131,7 +133,9 @@
           <div class="col-8 col-md-9">
             <div class="numbers">
               <p class="card-category">Vdekje</p>
-              <p class="card-title">{{header?.te_vdekur}}<p>
+              <!-- <p class="card-title">{{header?.te_vdekur}}<p> -->
+                <span class="card-title">{{header?.te_vdekur}} </span>
+                    <span style="font-size: 12px;" class="card-title"> (sot + {{newDeath}} )</span>
             </div>
           </div>
         </div>

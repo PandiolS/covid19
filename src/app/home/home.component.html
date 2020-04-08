@@ -32,7 +32,7 @@
     </nav>
     <!-- End Navbar -->
     <div class="content">
-
+      <app-spinner *ngIf="loading"></app-spinner>
       
 
       <div class="row">
@@ -61,6 +61,20 @@
          <app-total-death></app-total-death>
         </div>
       </div>
+
+
+      <div class="row">
+        <div class="col-md-4">         
+          <app-activ-gjinia></app-activ-gjinia>
+        </div>
+         <div class="col-md-4">
+          <app-activ-mosha></app-activ-mosha>
+        </div>
+        <div class="col-md-4">
+          <app-solved-mosha></app-solved-mosha>
+        </div>
+      </div>
+      
 
       <div class="row">
         <div class="col-md-12">

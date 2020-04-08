@@ -10,6 +10,9 @@ import { DailyDeathChartComponent } from './daily-death-chart/daily-death-chart.
 import { TotalDeathComponent } from './total-death/total-death.component';
 import { DailyNewCasesComponent } from './daily-new-cases/daily-new-cases.component';
 import { CityCasesComponent } from './city-cases/city-cases.component';
+import { SolvedMoshaComponent } from './solved-mosha/solved-mosha.component';
+import { ActivMoshaComponent } from './activ-mosha/activ-mosha.component';
+import { ActivGjiniaComponent } from './activ-gjinia/activ-gjinia.component';
 
 @NgModule({
   declarations: [    
@@ -20,7 +23,10 @@ import { CityCasesComponent } from './city-cases/city-cases.component';
   DailyDeathChartComponent, 
   TotalDeathComponent, 
   DailyNewCasesComponent, 
-  CityCasesComponent
+  CityCasesComponent, 
+  SolvedMoshaComponent, 
+  ActivMoshaComponent,
+  ActivGjiniaComponent
   
 ],
   imports: [
@@ -36,7 +42,10 @@ import { CityCasesComponent } from './city-cases/city-cases.component';
     DailyDeathChartComponent,
     TotalDeathComponent,
     DailyNewCasesComponent,
-    CityCasesComponent
+    CityCasesComponent,
+    SolvedMoshaComponent, 
+    ActivMoshaComponent,
+    ActivGjiniaComponent
   ],
   providers:[
     DatePipe
